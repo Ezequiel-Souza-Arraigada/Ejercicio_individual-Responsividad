@@ -1,0 +1,83 @@
+/* Reset de márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del body */
+body {
+    background: url('../img/imagen1.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    color: #ffffff; /* Cambia el color del texto para que contraste con el fondo */
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Asegura que el body cubra toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor principal para mantener el footer en la parte inferior */
+.main-content {
+    flex: 1; /* Permite que el contenido principal ocupe el espacio disponible */
+    padding: 20px; /* Añade padding al contenido principal */
+}
+
+/* Estilo del header y el menú */
+header {
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el header */
+    padding: 10px 0;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de las secciones */
+section {
+    padding: 40px; /* Aumenta el padding para mejorar la legibilidad */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+    margin: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto dentro de las secciones */
+    color: #fff;
+}
+
+/* Estilo del footer */
+footer {
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el footer */
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+/* Media Queries para Responsividad */
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+    .menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
